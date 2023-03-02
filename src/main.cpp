@@ -1,10 +1,12 @@
 #include <Arduino.h>
-#include "say_hello.h"
+#include "soil_sensor.h"
+#include "ldr.h"
 
 void setup() {
   Serial.begin(9600);
+  pinMode(ldr, INPUT);
 }
 
 void loop() {
-  greeting();
+  sinh();
 }
